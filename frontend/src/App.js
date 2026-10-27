@@ -76,7 +76,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    document.title = "Saniya weds Mubeen — A Royal Nikah";
+    document.title = "Saniya ❤︎ Mubeen — A Royal Nikah";
   }, []);
 
   return (

@@ -16,7 +16,7 @@ import {
   EMBLEM_ROTATE,
   EMBLEM_TRANSITION,
 } from "@/lib/motionVariants";
-import { downloadIcs, openGoogleCalendar } from "@/lib/calendar";
+import { openGoogleCalendar } from "@/lib/calendar";
 
 const MAP_URL = "https://maps.app.goo.gl/n4ComNLeAwLZ63vd8";
 const DINNER_MAP_URL = "https://maps.app.goo.gl/xhW7io6XjNMa8DsYA?g_st=aw";
@@ -221,18 +221,6 @@ const CalendarButtons = () => (
   <div className="calendar-actions">
     <button
       type="button"
-      className="cal-btn cal-btn-primary"
-      data-testid="add-to-calendar-btn"
-      onClick={downloadIcs}
-    >
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-        <rect x="3" y="5" width="18" height="16" rx="2" />
-        <path d="M3 9h18 M8 3v4 M16 3v4 M12 13v5 M9.5 15.5h5" />
-      </svg>
-      <span>Add to Calendar</span>
-    </button>
-    <button
-      type="button"
       className="cal-btn cal-btn-ghost"
       data-testid="add-to-google-calendar-btn"
       onClick={openGoogleCalendar}
@@ -253,7 +241,7 @@ export const DinnerSection = () => (
       viewport={VIEWPORT_ONCE}
       transition={TRANSITION_1}
     >
-      <p className="small-label">Walima Dinner</p>
+      <p className="small-label">Dawat-e-Nikah</p>
       <div className="dinner-card">
         <DinnerEmblem />
         <p className="dinner-title" data-testid="dinner-title">Dawat-e-Nikaah</p>

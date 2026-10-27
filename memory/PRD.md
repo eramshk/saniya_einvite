@@ -24,3 +24,4 @@ React 19 + Framer Motion + CRACO (frontend) / FastAPI (backend, untouched)
 - Removed closing footer greeting "Wa-salamu alaykum..." from App.js
 - Background nasheed now Noor-ul-Nikah (vocals only), self-hosted at frontend/public/noor-ul-nikah.mp3 via PUBLIC_URL
 - Next: user clicks "Save to GitHub" to redeploy via GitHub Actions
+- Merged user's GitHub-only edits: removed "Add to Calendar" (.ics) button (Google Calendar kept), small label "Dawat-e-Nikah", title "Saniya ❤︎ Mubeen — A Royal Nikah" (index.html + document.title), description "Wedding Invite", hidden emergent-badge anchor kept (index.html copied from GitHub main)
