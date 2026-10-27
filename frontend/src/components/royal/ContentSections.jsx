@@ -55,6 +55,62 @@ export const BismillahSection = () => (
   </Section>
 );
 
+const BlessingCrown = () => (
+  <div className="blessing-crown" aria-hidden="true">
+    <svg viewBox="0 0 120 70" width="110" height="64">
+      <g fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round">
+        <path d="M14 52 L8 18 L34 38 L60 8 L86 38 L112 18 L106 52 Z" />
+        <path d="M14 52 H106 V62 H14 Z" />
+        <path d="M22 57 h76" strokeDasharray="2 4" />
+        <path d="M60 22 l6 10 -6 10 -6 -10 Z" />
+        <path d="M34 44 l4 4 -4 4 -4 -4 Z M86 44 l4 4 -4 4 -4 -4 Z" />
+      </g>
+      <circle cx="8" cy="16" r="3" fill="currentColor" />
+      <circle cx="60" cy="6" r="3.4" fill="currentColor" />
+      <circle cx="112" cy="16" r="3" fill="currentColor" />
+      <circle cx="34" cy="36" r="2" fill="currentColor" />
+      <circle cx="86" cy="36" r="2" fill="currentColor" />
+    </svg>
+  </div>
+);
+
+export const BlessingsSection = () => (
+  <Section testId="blessings-section" className="center blessings-section">
+    <motion.div
+      initial={FADE_UP_INITIAL}
+      whileInView={FADE_UP_ANIMATE}
+      viewport={VIEWPORT_ONCE}
+      transition={TRANSITION_11}
+    >
+      <div className="arch-card blessing-card">
+        <p className="blessing-sunnah" lang="ar" data-testid="blessing-sunnah">
+          اَلنِّكَاحُ سُنَّتِيْ
+        </p>
+        <p className="blessing-text" data-testid="blessing-text">
+          With the blessings of Allah Almighty, the Holy Prophet{" "}
+          <span className="blessing-pbuh" lang="ar">ﷺ</span>, and the revered
+          elders of faith.
+        </p>
+        <Ornate />
+        <motion.p
+          className="blessing-hamd"
+          lang="ar"
+          animate={GLOW_TEXT_SHADOW_BISMILLAH}
+          transition={GLOW_TRANSITION_45}
+        >
+          اَلْحَمْدُ لِلّٰه
+        </motion.p>
+        <p className="blessing-faiz">Ba’Faiz-e-Ruhaani</p>
+        <BlessingCrown />
+        <p className="blessing-name" data-testid="blessing-name">
+          Huzur Tajush’shariaa Mufti Muhammad Akhtar Raza Khan Qadri Noori
+        </p>
+        <p className="blessing-rahma" lang="ur">رحمۃ اللہ تعالیٰ علیہ</p>
+      </div>
+    </motion.div>
+  </Section>
+);
+
 export const DateSection = () => (
   <Section testId="date-section" className="center date-section">
     <motion.div

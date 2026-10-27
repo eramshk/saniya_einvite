@@ -260,21 +260,6 @@ const MoonStarIcon = () => (
   </svg>
 );
 
-const MosqueIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    width="16"
-    height="16"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.6"
-    aria-hidden="true"
-  >
-    <path d="M12 2 L4 8 v12 h5 v-7 h6 v7 h5 V8 z" />
-    <path d="M12 2 v3 M10 4 h4" />
-  </svg>
-);
-
 const RevealNames = () => (
   <>
     <RevealItem as="h2" custom={2} className="bride-name shimmer">
@@ -303,13 +288,6 @@ const RevealDetails = ({ onScroll }) => (
   <>
     <RevealItem as="p" custom={6} className="reveal-meta">
       <span className="meta-strong">Friday, 25 December 2026</span>
-      <span className="meta-dot">•</span>
-      <span>After Ṣalāt-ul-ʿAṣr</span>
-    </RevealItem>
-
-    <RevealItem as="p" custom={6.5} className="reveal-venue">
-      <MosqueIcon />
-      <span>Badi Masjid, Karwar</span>
     </RevealItem>
 
     <motion.button

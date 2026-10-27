@@ -15,6 +15,7 @@ import {
   VenueSection,
   DinnerSection,
   ClosingSection,
+  BlessingsSection,
 } from "@/components/royal/ContentSections";
 
 const NASHEED_URL = `${process.env.PUBLIC_URL}/noor-ul-nikah.mp3`;
@@ -106,6 +107,7 @@ const Home = () => {
       <main ref={contentRef} className="content">
         <Arabesque />
         <BismillahSection />
+        <BlessingsSection />
         <DateSection />
         <EventSection />
         <VenueSection />
