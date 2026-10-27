@@ -17,8 +17,7 @@ import {
   ClosingSection,
 } from "@/components/royal/ContentSections";
 
-const NASHEED_URL =
-  "https://archive.org/download/y-2mate.com-new-wedding-nasheed-music-free-muhammad-al-muqit/y2mate.com%20-%20New%20Wedding%20Nasheed%20Music%20Free%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%85%D9%82%D9%8A%D8%B7%20%D8%B9%D8%B1%D9%88%D8%B3%D8%A9%20%D8%A7%D9%84%D9%86%D9%88%D8%B1%20Muhammad%20al%20Muqit.mp3";
+const NASHEED_URL = `${process.env.PUBLIC_URL}/noor-ul-nikah.mp3`;
 
 const NASHEED_VOLUME = 0.55;
 const SCROLL_OFFSET = ["start start", "end start"];
@@ -112,10 +111,6 @@ const Home = () => {
         <VenueSection />
         <DinnerSection />
         <ClosingSection />
-
-        <footer className="footer" data-testid="footer">
-          <p>وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
-        </footer>
       </main>
     </div>
   );

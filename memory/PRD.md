@@ -17,3 +17,10 @@ React 19 + Framer Motion + CRACO (frontend) / FastAPI (backend, untouched)
 
 ## Backlog
 - Optional: include dinner time on the reveal panel (above-the-fold) so guests see it without scrolling
+
+## Update — June 2026
+- Dinner heading changed to "Dawat-e-Nikaah" (heading only; calendar event text unchanged)
+- Gulshan Baug link now https://maps.app.goo.gl/xhW7io6XjNMa8DsYA?g_st=aw (Badi Masjid link unchanged)
+- Removed closing footer greeting "Wa-salamu alaykum..." from App.js
+- Background nasheed now Noor-ul-Nikah (vocals only), self-hosted at frontend/public/noor-ul-nikah.mp3 via PUBLIC_URL
+- Next: user clicks "Save to GitHub" to redeploy via GitHub Actions

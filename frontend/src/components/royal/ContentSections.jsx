@@ -19,6 +19,7 @@ import {
 import { downloadIcs, openGoogleCalendar } from "@/lib/calendar";
 
 const MAP_URL = "https://maps.app.goo.gl/n4ComNLeAwLZ63vd8";
+const DINNER_MAP_URL = "https://maps.app.goo.gl/xhW7io6XjNMa8DsYA?g_st=aw";
 
 const TRANSITION_1 = { duration: 1 };
 const TRANSITION_11 = { duration: 1.1 };
@@ -190,7 +191,7 @@ const DinnerEmblem = () => (
 
 const DinnerVenueLink = () => (
   <a
-    href={MAP_URL}
+    href={DINNER_MAP_URL}
     target="_blank"
     rel="noopener noreferrer"
     className="dinner-venue-row dinner-venue-link"
@@ -255,7 +256,7 @@ export const DinnerSection = () => (
       <p className="small-label">Walima Dinner</p>
       <div className="dinner-card">
         <DinnerEmblem />
-        <p className="dinner-title" data-testid="dinner-title">Dinner Reception</p>
+        <p className="dinner-title" data-testid="dinner-title">Dawat-e-Nikaah</p>
         <p className="dinner-time" data-testid="dinner-time">7:00 PM Onwards</p>
         <DinnerVenueLink />
         <p className="dinner-note">
