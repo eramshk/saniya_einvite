@@ -27,3 +27,6 @@ React 19 + Framer Motion + CRACO (frontend) / FastAPI (backend, untouched)
 - Merged user's GitHub-only edits: removed "Add to Calendar" (.ics) button (Google Calendar kept), small label "Dawat-e-Nikah", title "Saniya ❤︎ Mubeen — A Royal Nikah" (index.html + document.title), description "Wedding Invite", hidden emergent-badge anchor kept (index.html copied from GitHub main)
 - Front reveal panel: removed "After Salat-ul-Asr" and "Badi Masjid, Karwar" (date kept)
 - New BlessingsSection after Bismillah: An-Nikahu Sunnati, blessings line w/ ﷺ, Alhamdulillah, Ba'Faiz-e-Ruhaani, gold SVG crown, Huzur Tajush'shariaa name + رحمۃ اللہ تعالیٰ علیہ
+- Fixed blank page on Emergent deploy: package.json homepage changed to "." (relative asset paths, works on emergent.host root AND GitHub Pages subpath). Redeploy triggered.
+- GitHub Actions deploy blocked: user's GitHub account locked due to billing issue (not a code problem).
+- Learning: never run `yarn build` inside /app/frontend while dev server runs; it corrupts node_modules/.cache (clear it + restart frontend if eslint "babel-preset-react-app/prod.js" error appears).
