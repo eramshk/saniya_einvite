@@ -30,3 +30,4 @@ React 19 + Framer Motion + CRACO (frontend) / FastAPI (backend, untouched)
 - Fixed blank page on Emergent deploy: package.json homepage changed to "." (relative asset paths, works on emergent.host root AND GitHub Pages subpath). Redeploy triggered.
 - GitHub Actions deploy blocked: user's GitHub account locked due to billing issue (not a code problem).
 - Learning: never run `yarn build` inside /app/frontend while dev server runs; it corrupts node_modules/.cache (clear it + restart frontend if eslint "babel-preset-react-app/prod.js" error appears).
+- "Prophet ﷺ," wrapped in nowrap span (.blessing-nowrap) so they never split across lines

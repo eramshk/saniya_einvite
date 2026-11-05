@@ -806,6 +806,7 @@ html, body {
   margin: 0 auto;
 }
 .blessing-pbuh { font-family: "Amiri", serif; color: var(--gold-bright); font-size: 1.15em; }
+.blessing-nowrap { white-space: nowrap; display: inline-block; }
 .blessing-hamd {
   font-family: "Amiri", serif;
   font-weight: 700;

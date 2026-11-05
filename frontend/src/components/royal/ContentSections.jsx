@@ -87,9 +87,11 @@ export const BlessingsSection = () => (
           اَلنِّكَاحُ سُنَّتِيْ
         </p>
         <p className="blessing-text" data-testid="blessing-text">
-          With the blessings of Allah Almighty, the Holy Prophet{" "}
-          <span className="blessing-pbuh" lang="ar">ﷺ</span>, and the revered
-          elders of faith.
+          With the blessings of Allah Almighty, the Holy{" "}
+          <span className="blessing-nowrap">
+            Prophet&nbsp;<span className="blessing-pbuh" lang="ar">ﷺ</span>,
+          </span>{" "}
+          and the revered elders of faith.
         </p>
         <Ornate />
         <motion.p
