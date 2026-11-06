@@ -18,7 +18,7 @@ import {
   BlessingsSection,
 } from "@/components/royal/ContentSections";
 
-const NASHEED_URL = `${process.env.PUBLIC_URL}/noor-ul-nikah-v2.mp3`;
+const NASHEED_URL = `${process.env.PUBLIC_URL}/noor-ul-nikah-v3.mp3`;
 
 const NASHEED_VOLUME = 0.55;
 const SCROLL_OFFSET = ["start start", "end start"];
